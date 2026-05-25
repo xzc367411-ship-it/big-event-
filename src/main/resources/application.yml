@@ -1,0 +1,20 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /big-event
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/big_event?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 2310705138
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  # 开启下划线转驼峰（必备）
